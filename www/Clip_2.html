@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<title>clipoa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="./css/index.css" rel="stylesheet">
+	</head>
+	<body link ="blue" vlink ="orange" alink ="green" style='background: rgb(55,55,55);' onload="local_load(),local_load_a(),local_load_b(),local_load_c();">
+	<!-- 1. Define some markup -->
+	<center><h2>Saved by copying・・・</h2></center>
+	<center>
+    <textarea type="text" id="foo" class="taresult">hello</textarea>
+	<button
+		class="btn"
+		data-clipboard-action="copy"
+		data-clipboard-target="#foo"
+		onclick="local_save(), beep();"
+	>
+		Copy
+	</button>
+	</center>
+	
+	<!-- 1.1. Define some markup -->
+	<br>
+	<center>
+    <textarea type="text" id="fooo" class="taresult">hello</textarea>
+	<button
+		class="btn"
+		data-clipboard-action="copy"
+		data-clipboard-target="#fooo"
+		onclick="local_save_a(), beep();"
+	>
+		Copy
+	</button>
+	</center>
+
+	<!-- 1.1. Define some markup -->
+	<br>
+	<center>
+    <textarea id="foooo" class="taresult">hello</textarea>
+	<button
+		class="btn"
+		data-clipboard-action="copy"
+		data-clipboard-target="#foooo"
+		onclick="local_save_b(),beep();"
+	>
+		Copy
+	</button>
+	</center>
+	
+	<!-- 1. Define some markup -->
+	<br>
+	<center>
+	<textarea id="fooooo" class="taresult">hello</textarea>
+	<button
+		class="btn"
+		data-clipboard-action="copy"
+		data-clipboard-target="#fooooo"
+		onclick="local_save_c(), beep();"
+	>
+		Copy
+	</button>
+	</center>
+	
+	<!-- 1. Include library-->
+	<script src="cordova.js"></script> 
+	<!-- 2. Include library -->
+	<script src="./js/clipboard.min.js"></script>
+	<!-- 3. Instantiate clipboard -->
+	<script>
+		var clipboard = new ClipboardJS('.btn');
+		clipboard.on('success', function (e) {
+		console.log(e);
+		});
+		clipboard.on('error', function (e) {
+		console.log(e);
+		});
+	</script>
+	<!-- 4. Include library -->
+	<script src="./js/saver_1.js"></script>
+	<!-- 5. Include library -->
+	<script src="./js/beep.js"></script>
+	</body>
+	<!--return-->
+	<center><h3><a href="./index.html">Go Back</a></h3></center>
+</html>

@@ -1,0 +1,76 @@
+    	.btn{
+    		display: block;
+    		background-color: white;
+    		border: solid 2px pink;
+    		padding: 10px 20px 10px 20px;
+    		border-radius: 3px;
+    		margin: 10px;
+    		cursor: pointer;
+    		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    		width: calc(40% + 20px);
+    	}
+
+    	.btn:hover{
+    		background-color: #e7e7e7;
+    	}
+
+    	.textlbl{
+    		margin: 10px;
+    		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    	}
+
+
+    	.fileh{
+    		visibility: hidden;
+    		display: none !important;
+    	}
+
+    	.taresult{
+    		display: block;
+    		background-color: white;
+    		border: solid 2px pink;
+    		padding: 5px 10px 5px 10px;
+    		border-radius: 3px;
+    		margin: 10px;
+    		font-family: Arial, Tahoma;
+    		width: calc(45% + 60px);
+    		height: 130px;
+    	}
+
+
+    	.input_style{
+    		display: block;
+    		background-color: white;
+    		border: solid 2px pink;
+    		padding: 5px 10px 5px 10px;
+    		border-radius: 3px;
+    		margin: 10px;
+    		font-family: Arial, Tahoma;
+    		width: calc(50% + 60px);
+    		height: 40px;
+    	}
+
+    	.input_text{
+    		display: block;
+    		background-color: white;
+    		border: solid 2px pink;
+    		padding: 5px 10px 5px 10px;
+    		border-radius: 3px;
+    		margin: 10px;
+    		font-family: Arial, Tahoma;
+    		width: calc(50% + 60px);
+    		height: 40px;
+    	}
+
+    	.imgcontent{
+    		text-align: center;
+    	}
+
+    	.imgpf{
+    		margin: 10px;
+    		max-width: calc(100% - 20px);
+    	}
+
+	#tululoogame {
+    		text-align: center;
+	}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<title>clipoa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="./css/index.css" rel="stylesheet">
+	</head>
+	<body onload = "local_load(),local_load_1(),local_load_2()" style='background: rgb(55,55,55);' link ="blue" vlink ="orange" alink ="green">
+
+	<!-- 1. Define some markup -->
+	<br>
+	<center>
+	<h3>Sample_Bookmark</h3>
+	<form>
+		<input id ="example"  name="sample" type="text" value="https://google.com" class="input_style">
+		<input 
+			class="btn" 
+			type="button" 
+			value="OPEN" 
+			data-clipboard-action="copy" 
+			data-clipboard-target="#example" 
+			onclick="beep(), window.open(this.form.sample.value,'freelink')">
+	</input>
+	</form>
+	</center>
+	
+	<!-- 1. Define some markup -->
+	<br>
+	<center>
+	<h3>Custom_Bookmark_1</h3>
+	<form action="" method="" name="form1">
+	<input id="komorebi" class="input_style" type ="text" name="test"value="https://yahoo.co.jp" ></input>
+		<input 
+			class="btn" 
+			type="button" 
+			value="OPEN" 
+			data-clipboard-action="copy" 
+			data-clipboard-target="#komorebi" 
+			onclick="local_save(), beep(), window.open(this.form.test.value,'freelink')">
+	</input>
+	</form>
+	</center>
+	
+	<!-- 1.1. Define some markup -->
+	<br>
+	<center>
+	<h3>Custom_Bookmark_2</h3>
+	<form>
+		<input id ="harawata"  name="url" type="text" value="https://google.com" class="input_style"></input>
+		<input 
+			class="btn" 
+			type="button" 
+			value="OPEN" 
+			data-clipboard-action="copy" 
+			data-clipboard-target="#harawata" 
+			onclick="local_save_2(), beep(), window.open(this.form.url.value,'freelink')">
+	</input>
+	</form>
+	</center>
+	
+	<!-- 1.1. Define some markup -->
+	<br>
+	<center>
+	<h3>Custom_Bookmark_2</h3>
+	<form>
+    <input id="kirakira" class="input_style" type = "text" name="kiraboshi" value="https://google.com"></input>
+	<input
+		class="btn"
+		type="button" 
+		value="OPEN" 
+		data-clipboard-action="copy"
+		data-clipboard-target="#kirakira"
+		onclick="local_save_1(), beep(), window.open(this.form.kiraboshi.value,'freelink')";>
+	</input>
+	</form>
+	</center>	
+	<!-- 1. Include library -->
+	<script src="./js/beep.js"></script> 
+	<!-- 2. Include library -->
+	<script src="./js/saver_3.js"></script>
+	<!-- 3. Instantiate clipboard -->
+	<script src="./js/clipboard.min.js"></script>
+	<!-- 4. Instantiate clipboard -->
+	<script>
+		var clipboard = new ClipboardJS('.btn');
+		clipboard.on('success', function (e) {
+		console.log(e);
+		});
+		clipboard.on('error', function (e) {
+		console.log(e);
+		});
+	</script>
+	<!--return-->
+	<center><h3><a href="./index.html">Go Back</a></h3></center>
+	</body>
+</html>

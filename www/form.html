@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta charset="Shift_JIS">
+	<title>MD_Shell</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="./css/index.css" rel="stylesheet">
+</head>
+
+<body style='background:rgb(55,55,55);' link ="blue" vlink ="orange" alink ="green">
+	<!--form_1-->
+	<div>
+		<center><h2><p>UHL</p></h2></center>
+		<center><input id="textbox4" type="text"class="taresult"/></center>
+		<center><h5><p>UHLのみ、＜＞は外して・・・</p></h5></center>
+	</div>
+	<!--form_2-->
+	<div>
+		<center><h2><p>ファイル名</p></h2></center>
+		<center><input id="textbox3" type="text"class="taresult"/></center>
+		<center><h5><p>(例)sample.md</p></h5></center>
+	</div>
+	<!--button-->
+	<div>
+		<center><input type="button" onclick="buttonClick();" value="change" class="btn"/></center>
+		<center><h2><p>書き出し</p></h2></center>
+		<center><label class="textlbl" id="bsrc"></label></center>
+		<center><textarea id="textbox6" type="text" class="taresult"></textarea></center><br>
+		<center><button class="btn" data-clipboard-action="copy" data-clipboard-target="#textbox6">Copy</button></center>
+	</div>
+	<!--return-->
+	<center><h3><a href="./index.html">Go Back</a></h3></center>
+	<!--hidden-->
+	<center><input id="textbox1" type="hidden" value="?file="/><br></center>
+	<center><input id="textbox2" type="hidden" value="></script>"/><br></center>
+	<center><input id="textbox5" type="hidden" value="<script><"/><br></center>
+</body>
+
+<footer class="">
+	<!-- 1. Text Plus -->
+	<script src="./js/textPlus.js"></script>
+	<!-- 2. Include library -->
+	<script src="./js/clipboard.min.js"></script>
+	<!-- 3. Instantiate clipboard -->
+	<script>
+		var clipboard = new ClipboardJS('.btn');
+		clipboard.on('success', function (e) {
+		console.log(e);
+		});
+		clipboard.on('error', function (e) {
+		console.log(e);
+		});
+	</script>
+	
+	<script>
+		document.addEventListener("backbutton", function(e){
+		ons.setDefaultDeviceBackButtonListener();
+		}, false);
+	</script>
+</footer>
+</html>

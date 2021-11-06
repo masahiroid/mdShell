@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><tululoo version="130" uid="134" title="" advancedscriptmode="0" imgfolder="img" audfolder="aud"><functions/><variables>dageki = 0;
+dageking = 0;</variables><comments/><sprites count="10"><sprite name="sprite_24" centerx="0" centery="0" collisionshape="Box" collisionradius="60" collisionleft="0" collisionright="120" collisiontop="0" collisionbottom="40"/><sprite name="sprite_25" centerx="60" centery="20" collisionshape="Box" collisionradius="60" collisionleft="0" collisionright="120" collisiontop="0" collisionbottom="40"/><sprite name="sprite_26" centerx="40" centery="40" collisionshape="Box" collisionradius="40" collisionleft="0" collisionright="80" collisiontop="0" collisionbottom="80"/><sprite name="sprite_27" centerx="60" centery="20" collisionshape="Box" collisionradius="60" collisionleft="0" collisionright="120" collisiontop="0" collisionbottom="40"/><sprite name="sprite_28" centerx="60" centery="20" collisionshape="Box" collisionradius="60" collisionleft="0" collisionright="120" collisiontop="0" collisionbottom="40"/><sprite name="spr_top" centerx="90" centery="20" collisionshape="Box" collisionradius="90" collisionleft="0" collisionright="180" collisiontop="0" collisionbottom="40"/><sprite name="spr_effects" centerx="80" centery="80" collisionshape="Box" collisionradius="80" collisionleft="0" collisionright="160" collisiontop="0" collisionbottom="160"/><sprite name="spr_down_a" centerx="90" centery="20" collisionshape="Box" collisionradius="90" collisionleft="0" collisionright="180" collisiontop="0" collisionbottom="40"/><sprite name="spr_down_b" centerx="90" centery="20" collisionshape="Box" collisionradius="90" collisionleft="0" collisionright="180" collisiontop="0" collisionbottom="40"/><sprite name="spr_top_b" centerx="90" centery="20" collisionshape="Box" collisionradius="90" collisionleft="0" collisionright="180" collisiontop="0" collisionbottom="40"/></sprites><frames count="22"><frame file="0" sprite="sprite_25"/><frame file="0" sprite="sprite_24"/><frame file="1" sprite="sprite_24"/><frame file="1" sprite="sprite_25"/><frame file="0" sprite="sprite_26"/><frame file="1" sprite="sprite_26"/><frame file="0" sprite="sprite_27"/><frame file="1" sprite="sprite_27"/><frame file="0" sprite="sprite_28"/><frame file="1" sprite="sprite_28"/><frame file="0" sprite="spr_effects"/><frame file="1" sprite="spr_effects"/><frame file="2" sprite="spr_effects"/><frame file="3" sprite="spr_effects"/><frame file="0" sprite="spr_down_b"/><frame file="1" sprite="spr_down_b"/><frame file="0" sprite="spr_top"/><frame file="1" sprite="spr_top"/><frame file="0" sprite="spr_down_a"/><frame file="1" sprite="spr_down_a"/><frame file="0" sprite="spr_top_b"/><frame file="1" sprite="spr_top_b"/></frames><sounds count="3"><sound name="snd_51" wav="kaifuku0010.wav" mp3="" ogg=""/><sound name="snd_52" wav="dageki0003.wav" mp3="" ogg=""/><sound name="snd_53" wav="showmetu1.wav" mp3="" ogg=""/></sounds><musics count="0"/><backgrounds count="0"/><fonts count="1"><font name="font_a" family="Arial" size="16" bold="0" italic="0"/></fonts><objects count="28"><object name="show_HackMD" template="" prototype="1" scene="" sprite="sprite_24" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="obj_draw" template="" prototype="1" scene="" sprite="" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="show_Gist" template="" prototype="1" scene="" sprite="sprite_25" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="SceneObject66" template="show_HackMD" prototype="0" scene="stg_001" sprite="sprite_24" x="40" y="140" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="SceneObject67" template="show_Gist" prototype="0" scene="stg_001" sprite="sprite_25" x="260" y="160" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="SceneObject69" template="obj_draw" prototype="0" scene="stg_001" sprite="" x="100" y="120" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="obj_draw_2" template="" prototype="1" scene="" sprite="" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="SceneObject71" template="obj_draw_2" prototype="0" scene="stg_001" sprite="" x="260" y="120" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="obj_rogo" template="" prototype="1" scene="" sprite="sprite_26" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="SceneObject74" template="obj_rogo" prototype="0" scene="stg_001" sprite="sprite_26" x="180" y="400" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="SceneObject75" template="obj_rogo" prototype="0" scene="stg_001" sprite="sprite_26" x="180" y="400" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="show_GitLab" template="" prototype="1" scene="" sprite="sprite_27" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="show_CodePen" template="" prototype="1" scene="" sprite="sprite_28" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="obj_draw_3" template="" prototype="1" scene="" sprite="" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="obj_draw_4" template="" prototype="1" scene="" sprite="" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="SceneObject99" template="show_GitLab" prototype="0" scene="stg_001" sprite="sprite_27" x="100" y="280" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="SceneObject100" template="show_CodePen" prototype="0" scene="stg_001" sprite="sprite_28" x="260" y="280" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="SceneObject101" template="obj_draw_3" prototype="0" scene="stg_001" sprite="" x="100" y="240" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="SceneObject102" template="obj_draw_4" prototype="0" scene="stg_001" sprite="" x="260" y="240" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="obj_top_left" template="" prototype="1" scene="" sprite="spr_top" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="SceneObject109" template="obj_top_left" prototype="0" scene="stg_001" sprite="spr_top" x="90" y="20" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="obj_top_right" template="" prototype="1" scene="" sprite="spr_top_b" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="SceneObject112" template="obj_top_right" prototype="0" scene="stg_001" sprite="spr_top_b" x="270" y="20" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="obj_effects" template="" prototype="1" scene="" sprite="spr_effects" x="0" y="0" visible="1" depth="10" collision="1" parent="" direction="0" image_angle="0"/><object name="obj_down_left" template="" prototype="1" scene="" sprite="spr_down_b" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="SceneObject123" template="obj_down_left" prototype="0" scene="stg_001" sprite="spr_down_b" x="90" y="500" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/><object name="obj_down_right" template="" prototype="1" scene="" sprite="spr_down_a" x="0" y="0" visible="1" depth="0" collision="1" parent="" direction="0" image_angle="0"/><object name="SceneObject129" template="obj_down_right" prototype="0" scene="stg_001" sprite="spr_down_a" x="270" y="500" visible="0" depth="0" collision="0" parent="" direction="0" image_angle="0"/></objects><scripts count="15"><script name="scr_26" object="show_HackMD" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, show_HackMD)) {
+image_index = 2;
+sound_play(snd_51);
+open_hackmd();
+};</script><script name="scr_55" object="obj_draw" event="Draw" parameter="">draw_set_font(font_a)
+draw_text(x-54,y-10,'Show HackMD')</script><script name="scr_26" object="show_Gist" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, show_Gist)) {
+image_index = 2;
+sound_play(snd_51);
+open_gist();
+};
+</script><script name="scr_55" object="obj_draw_2" event="Draw" parameter="">draw_set_font(font_a)
+draw_text(x-36,y-10,'Show Gist')</script><script name="scr_94" object="obj_rogo" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, obj_rogo)) {
+dageki = 1;
+};
+
+if(dageki == 1){
+image_index = 2 ;
+sound_play(snd_52);
+dageki = 0;
+dageking += 1;
+instance_create(x,y,obj_effects);
+};
+
+if(dageking == 20){
+instance_destroy();
+};
+</script><script name="scr_26" object="show_GitLab" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, show_GitLab)) {
+image_index = 2;
+sound_play(snd_51);
+open_gitlab();
+};
+</script><script name="scr_26" object="show_CodePen" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, show_CodePen)) {
+image_index = 2;
+sound_play(snd_51);
+open_codepen();
+};
+</script><script name="scr_55" object="obj_draw_3" event="Draw" parameter="">draw_set_font(font_a)
+draw_text(x-50,y-10,'Show GitLab')</script><script name="scr_55" object="obj_draw_4" event="Draw" parameter="">draw_set_font(font_a)
+draw_text(x-56,y-10,'Show CodePen')</script><script name="scr_110" object="obj_top_left" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, obj_top_left)) {
+image_index = 2;
+sound_play(snd_51);
+open_link_bi64();
+};</script><script name="scr_111" object="obj_top_right" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, obj_top_right)) {
+image_index = 2;
+sound_play(snd_51);
+open_link();
+};</script><script name="scr_116" object="obj_effects" event="Animation end" parameter="">instance_destroy();</script><script name="scr_125" object="obj_down_left" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, obj_down_left)) {
+image_index = 2;
+sound_play(snd_51);
+open_link_clip();
+};</script><script name="scr_125" object="obj_down_right" event="Step" parameter="">image_index = 1 ;
+if(mouse_check_pressed() &amp;&amp; position_meeting(mouse_x, mouse_y, obj_down_right)) {
+image_index = 2;
+sound_play(snd_51);
+open_link_clip_b();
+};</script><script name="scr_133" object="obj_rogo" event="Destroy" parameter="">sound_play(snd_53);</script></scripts><scenes count="1"><scene name="stg_001" width="360" height="640" speed="30" red="74" green="74" blue="74" background="" backgroundstretch="0" backgroundtilex="0" backgroundtiley="0" viewportwidth="360" viewportheight="640" viewportxborder="50" viewportyborder="50" viewportobject=""/></scenes><layers count="1"><layer name="layer_65" scene="stg_001" value="1000000"/></layers><tiles count="0"/><fns count="10"><fn name="open_hackmd" params="" description="">var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+windowObjectReference = window.open(
+	"https://hackmd.io/?nav=overview/",
+	"DescriptiveWindowName",
+    "resizable,scrollbars,status"
+	);</fn><fn name="open_gist" params="" description="">var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+windowObjectReference = window.open(
+	"https://gist.github.com/",
+	"DescriptiveWindowName",
+    "resizable,scrollbars,status"
+	);</fn><fn name="open_gitlab" params="" description="">var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+windowObjectReference = window.open(
+	"https://gitlab.com/dashboard/snippets/",
+	"DescriptiveWindowName",
+    "resizable,scrollbars,status"
+	);</fn><fn name="open_codepen" params="" description="">var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+windowObjectReference = window.open(
+	"https://codepen.io/your-work",
+	"DescriptiveWindowName",
+    "resizable,scrollbars,status"
+	);</fn><fn name="open_link" params="" description="">var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+windowObjectReference = window.open("./form.html", "_self");</fn><fn name="open_link_bi64" params="" description="">var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+windowObjectReference = window.open("./BI64.html", "_self");</fn><fn name="local_save" params="" description="">var fm_text = document.getElementById("inputreferer").value;
+sound_play(snd_51);
+save_web_data("loca_a1",fm_text);</fn><fn name="local_load" params="" description="">//var referer = localStorage.getItem('boowy');
+var referer = load_web_data("loca_a1")
+//document.getElementById("thisreferer").innerHTML = referer;
+document.getElementById("inputreferer").value = referer;</fn><fn name="open_link_clip" params="" description="">var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+windowObjectReference = window.open("./Clip.html", "_self");</fn><fn name="open_link_clip_b" params="" description="">var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+windowObjectReference = window.open("./Clip_2.html", "_self");</fn></fns></tululoo>

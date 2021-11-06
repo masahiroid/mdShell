@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<title>clipoa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="./css/index.css" rel="stylesheet">
+	</head>
+	<body style='background: rgb(55,55,55);'link ="blue" vlink ="orange" alink ="green">
+	<!-- 1. Define some markup -->
+	<br>
+	<center>
+	<h3>HTMLのベース表</h3>
+	<textarea id="boo" class="taresult">
+<table>
+  <tr>
+    <th>文字</th>
+    <th style="background-color: yellow">文字</th>
+  </tr>
+  <tr>
+    <td>文字</td>
+    <td style="background-color: yellow">文字</td>
+  </tr>
+  <tr>
+    <td>文字</td>
+    <td style="background-color: yellow">文字</td>
+  </tr>
+</table>
+</textarea>
+	<button
+		class="btn"
+		data-clipboard-action="copy"
+		data-clipboard-target="#boo"
+		onclick="beep();">Copy
+	</button>
+	</center>
+	
+	<!-- 1.1. Define some markup -->
+	<br>
+	<center>
+	<h3>マークダウンのベース表</h3>
+    <textarea id="booo" class="taresult">
+|--|--|--|
+|--|--|--|
+|--|--|--|
+|--|--|--|
+|--|--|--|
+|--|--|--|</textarea>
+	<button
+		class="btn"
+		data-clipboard-action="copy"
+		data-clipboard-target="#booo"
+		onclick="beep();">Copy
+	</button>
+	</center>
+	
+	<!-- 1.1. Define some markup -->
+	<br>
+	<center>
+	<h3>Gistのスニペットのファイル指定</h3>
+	<textarea id="boooo" class="taresult" name="referer"><script><****?file=sample.md></script>
+	</textarea>
+	<button
+		class="btn"
+		data-clipboard-action="copy"
+		data-clipboard-target="#boooo"
+		onclick="beep();">Copy
+	</button>
+	</center>
+	
+	<!-- 1. Include library -->
+	<script src="./js/beep.js"></script> 
+	<!-- 2. Include library -->
+	<script src="./js/clipboard.min.js"></script>
+	<!-- 3. Instantiate clipboard -->
+	<script>
+		var clipboard = new ClipboardJS('.btn');
+		clipboard.on('success', function (e) {
+		console.log(e);
+		});
+		clipboard.on('error', function (e) {
+		console.log(e);
+		});
+	</script>
+	<!--return-->
+	<center><h3><a href="./index.html">Go Back</a></h3></center>
+	</body>
+</html>

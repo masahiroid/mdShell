@@ -1,0 +1,55 @@
+<html lang="es">
+	<head>
+    	<title>base64 image encoder</title>
+    	<meta name="title" content="Imagen a base64"/>
+    	<meta name="description" content="Imagen a base64"/>
+    	<link href="./css/index.css" rel="stylesheet">
+    	<meta charset="utf-8"/>
+	</head>
+
+	<body link ="blue" vlink ="orange" alink ="green" style='background: rgb(55,55,55);' >
+		<br>
+		<div>
+			
+		<table border="0">
+			<tr>	
+				<center><td width="5%" height="100%" class="imgcontent"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAABMCAIAAADcP63LAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwElEQVR4nO3b0W3rMAxG4WadrpQ1OkbXyEqZpw8pUBURZdKiftny+R4LmSZuTh4C+94+gIXcZi8AZCJoLIWgsZR/Qd+fj1l7LOnxea/+/flV/zv2+fz+65agByJoDYIWIWgNghYhaA2CFiFoDYIWIWgNghYhaA2CFiFoDYIWIWgNghYhaA2CFiFoDYIWIWiNtKCtD8xj1pfHs3PWbrOCLj9g677WGQ/P/p75Wf8OBL2BoNsIuoKgxyHoXwT9QtBtlwjac631AZfXes5E9xl9X88+JeWPwvLDtoLuCdTzJYmeiSLo5Pt69ikRdPtMFEEn39ezT4mg22eiCDr5vp59SgTdPhM1LWjPtT0/2jwze74YUSsFPWJmzw7WHIIOzIki6H1zogh6525RBL1vThRB79wtiqD3zYk6TdDRKLOCzkLQGgQtQtAaBC1C0BoELULQGqd5sELQ/Qg6gKDbCFqDoEUIWoOgRQha49Av+Ge9YETQL7NeTiLoykyC7kfQAQTdRtAaBC1C0BqHeLDSM3P0QxlL1hf+aEFHWft7gh7xn2cJemOmhaDf53juZZ2JzrcQ9MZMC0G/z/HcyzoTnW8h6I2ZFoJ+n+O5l3UmOt9C0Ak7eGQFfZaHIJd+wb9nJkH3X0vQFQTtn1Mi6NwdCDphBw+Czj3vmXP6oC3RhzLRHTyuHHSp50dk9L4EvXMHD4JuzyfoyhkLQbevJegKgm4j6PZ8gt44X+r5MnjmeIwI2jPnCC8SRR/cEHTlfImg2+cJuoKg2wjaj6Ar50sE3T5P0BWzXpwf7Wg/CktZocx6GX/EDgS9gaA1CFqEoDUIWoSgNQ4XNNqO8IL/FRC0CEFrELQIQWsQtAhBaxC0CEFrELQIQWsQtAhBaxC0CEFrELQIQWsQtAhBaxC0CEFrELQIQWuYQQNnR9BYCkFjKQSNpfwAy6NIpwLRlmAAAAAASUVORK5CYII=" width="120px" height="38px" ></td></center>
+			</tr>
+    	</table>	
+		</div>
+		
+		<div>
+			<center>
+			<label for="fileimg" class="btn" id="selectimg">Open</label>
+			<input type="file" id="fileimg" onchange="imageToBase64();" class="fileh" />
+			</center>
+		</div>
+		<div>
+			<center>
+			<label class="textlbl" id="bsrc"></label>
+			<textarea id="resultconversionsrc" class="taresult" ></textarea>
+			<button class="btn" data-clipboard-action="copy" data-clipboard-target="#resultconversionsrc" onclick="beep();">Copy</button>
+			</center>
+		</div>
+		<div class="imgcontent">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB7klEQVR4nO3cUVLDMAxFUbwtlsICWQrbMh80nqlSJ4qfHNv0vj86sSSfmbQ0CaSc8wdpTwJQC4BiABQDoBgAxQAoBkAx3QFTSi8b5JzTin12fQEU+/YCrG3IRt3gXX2q/QHUEg7o3ZDNtsGz9d7jztZHBUAxYYCtGxqVKEgAxQAoBkAxAIoBUMztgLZfSs/7yD/fx30+vy7VO5gDQE+9gznWAry6UQtp4eT6AIr1ZwfcALaN1za4vV5+dp7Cu3W1+maOMh+AAD69DiCAYqHGD5HegAfzAPiqjq1/MM8agLVTqHacu5+zXu04AN8F0MYLtXvTb1xXnQNA37rqHKsCzhIAxfx7QFss+q44gGr92QBLwSDIXoDT3lgvBQEMKixCRgMu83BRKQxgZcEDxjvQ6F9vrs55FRrAR7oD7i6YNp4SvUGj5nLDA/iXboCrwNncBQmgyXSAq3yIbAHQZFnA0XA2rXMD+MgygLPB2VydH0CT4YC1wrPD2XjnB7CS4YDvEgDFyIDlwDeD7H415r8nHLAs6PznqL3ineu2K9JnAwAYlNGQvW4mbQFQDIBiABQz7Mb62Zv61a9a0R8O3gAo5vaHi1q/xEdd1Jj+4SIAWwt1gvP2GQUJoBj+AaMYAMUAKAZAMQCKAVAMgGIAFPMLr3WRjkue1tQAAAAASUVORK5CYII=" id="imgpreview" class="imgpf">
+		</div>
+		<div>
+			<center><h3><a href="./index.html">Go Back</a></h3></center>
+		</div>
+	<!-- 1. Include library-->
+	<script src="./base64.js"></script>
+	<!-- 3. Instantiate clipboard -->
+	<script src="./js/clipboard.min.js"></script>
+	<!-- 4. Instantiate clipboard -->
+	<script>
+		var clipboard = new ClipboardJS('.btn');
+		clipboard.on('success', function (e) {
+		console.log(e);
+		});
+		clipboard.on('error', function (e) {
+		console.log(e);
+		});
+	</script>
+	</body>
+</html>
